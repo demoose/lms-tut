@@ -39,6 +39,7 @@ const CreatePage = () => {
         .then((response) =>
           router.push(`/teacher/courses/${response.data.id}`)
         );
+      toast.success("Course created successfully");
       // router.push(`/teacher/courses/${response.data.id}`);
 
       console.log(values);
